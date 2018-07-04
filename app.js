@@ -1,12 +1,11 @@
 //Requirements
 var express = require("express");
 var socket = require("socket.io");
-var port = process.env.PORT || 3000;
 // App setup
 
 var app = express();
 
-var server = app.listen(port, function(){
+var server = app.listen(process.env.PORT || 3000, function(){
     console.log("Server is now running");
 });
 
