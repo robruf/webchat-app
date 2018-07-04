@@ -1,6 +1,6 @@
 var username = prompt("Enter your username");
 
-var socket = io.connect("http://localhost:3000");
+var socket = io.connect("https://localhost:3000");
 
 var messages = document.getElementById("messages");
 var msg = document.getElementById("msg");
