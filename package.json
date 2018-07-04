@@ -8,5 +8,9 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "R",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "express": "*",
+    "socket.io": "*"
+  }
 }
