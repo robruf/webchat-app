@@ -1,8 +1,10 @@
-var username = prompt("Enter your username");
+var username = prompt("Enter your username:");
 
 var socket = io.connect("/");
 
 var messages = document.getElementById("messages");
+
+
 var msg = document.getElementById("msg");
 var btn = document.getElementById("send");
 var broadcast = document.getElementById("broadcast");
@@ -31,9 +33,14 @@ msg.addEventListener("keypress", function(event){
 
 socket.on("chatMessage", function(data) {
     broadcast.innerHTML = "";
-    messages.innerHTML += "<p><strong>" + data.name + "</strong>   " + data.message + "</p>";
+    messages.innerHTML += "<p><strong><i>" + data.name + "</strong></i>   " + data.message + "</p>";
+    
 });
 
 socket.on("typing", function(data) {
     broadcast.innerHTML = "<span><em>" + data + " is typing a message...</em></span>";
 });
+
+setInterval(function() {
+    messages.scrollTop = messages.scrollHeight;
+}, 10);
