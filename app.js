@@ -1,6 +1,6 @@
 //Requirements
 var express = require("express");
-var socket = require("socket.io");
+// var socket = require("socket.io");
 // App setup
 
 var app = express();
@@ -9,6 +9,7 @@ var server = app.listen(process.env.PORT || 3000, function(){
     console.log("Server is now running");
 });
 
+var socket = require("socket.io").listen(process.env.PORT || 3000);
 // Looks for static pages in "public" folder
 app.use(express.static("public"));
 
