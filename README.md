@@ -6,6 +6,8 @@ As it is a work-in-progress, there's still very little styling and minor bugs to
 
 Back-end technologies used: Node.js, ExpressJS, WebSocket.io
 
+App demo can be found at https://basicerrechat.herokuapp.com/
+
 ------------
 
 Web chat app che utilizza ExpressJS e WebSocket.io
@@ -16,3 +18,4 @@ Essendo un lavoro ancora non finito, ci sono piccoli bug da fixare e non ho anco
 
 Tecnologie back-end usate: Node.js, ExpressJS, WebSocket.io
 
+Potete trovare la demo del progetto qui: https://basicerrechat.herokuapp.com/
